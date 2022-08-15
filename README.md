@@ -25,3 +25,12 @@ is **not** `required()` by any other package, add `:pinDependencies` to renovate
   ]
 }
 ````
+
+## Excluding default settings
+If the configuration does not fit your project, you can exclude certain presets by adding:
+
+````json
+{
+  "ignorePresets": ["github>smg-automotive/renovate-config:nodeUpdate"]
+}
+````
