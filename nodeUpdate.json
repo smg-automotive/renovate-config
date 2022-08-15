@@ -1,0 +1,21 @@
+{
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "circleci/node",
+        "node",
+        "@types/node",
+        "cimg/node"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "labels": [
+        "node"
+      ],
+      "schedule": null,
+      "automerge": true
+    }
+  ]
+}

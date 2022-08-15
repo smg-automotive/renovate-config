@@ -1,0 +1,13 @@
+{
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "^@smg-automotive\/.*"
+      ],
+      "labels": [
+        "internal"
+      ],
+      "schedule": null
+    }
+  ]
+}

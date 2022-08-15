@@ -1,0 +1,18 @@
+{
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "labels": [
+        "docker"
+      ],
+      "schedule": null,
+      "automerge": true
+    }
+  ]
+}

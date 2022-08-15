@@ -1,2 +1,29 @@
 # renovate-config
+
 A sharable config preset for renovate used by SMG automotive.
+
+## Setup
+
+Enable Renovate in your repository and create a `renovate.json` file in the root of your project:
+
+````json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>smg-automotive/renovate-config"
+  ]
+}
+````
+
+By default, renovate will pin all **dev** dependencies and uses SemVer ranges for the others. If you work on a project that
+is **not** `required()` by any other package, add `:pinDependencies` to renovate.json.
+
+````json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>smg-automotive/renovate-config",
+    ":pinDependencies"
+  ]
+}
+````
