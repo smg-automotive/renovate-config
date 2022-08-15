@@ -8,7 +8,6 @@ Enable Renovate in your repository and create a `renovate.json` file in the root
 
 ````json
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>smg-automotive/renovate-config"
   ]
@@ -20,7 +19,6 @@ is **not** `required()` by any other package, add `:pinDependencies` to renovate
 
 ````json
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>smg-automotive/renovate-config",
     ":pinDependencies"
