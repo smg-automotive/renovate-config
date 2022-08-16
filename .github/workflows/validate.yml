@@ -1,0 +1,2 @@
+- name: renovate-config-validator
+  uses: rinchsan/renovate-config-validator@v0.0.11
