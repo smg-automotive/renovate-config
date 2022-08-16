@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    ":pinDependencies",
+    ":pinDevDependencies"
+  ],
+  "ignorePresets": [
+    "github>smg-automotive/renovate-config:pkg"
+  ]
+}

@@ -5,11 +5,11 @@
     "group:definitelyTyped",
     "group:jestPlusTSJest",
     ":separateMultipleMajorReleases",
-    ":pinDependencies",
     "github>smg-automotive/renovate-config:groupDevDependencies",
     "github>smg-automotive/renovate-config:autoMergeNonMajorNode",
     "github>smg-automotive/renovate-config:autoMergeNonMajorDocker",
-    "github>smg-automotive/renovate-config:internalSmgPackageUpdate"
+    "github>smg-automotive/renovate-config:internalSmgPackageUpdate",
+    "github>smg-automotive/renovate-config:pkg"
   ],
   "reviewers": [
     "team:frontend"
