@@ -12,9 +12,6 @@
         "minor",
         "patch"
       ],
-      "labels": [
-        "node"
-      ],
       "schedule": null,
       "automerge": true
     }

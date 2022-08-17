@@ -9,9 +9,6 @@
         "minor",
         "patch"
       ],
-      "labels": [
-        "docker"
-      ],
       "schedule": null,
       "automerge": true
     }

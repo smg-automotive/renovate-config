@@ -5,9 +5,7 @@
       "matchPackagePatterns": [
         "^@smg-automotive\/.*"
       ],
-      "labels": [
-        "internal"
-      ],
+      "rangeStrategy": "pin",
       "schedule": null
     }
   ]

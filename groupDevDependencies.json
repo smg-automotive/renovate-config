@@ -10,9 +10,6 @@
         "patch"
       ],
       "groupName": "devDependencies (non-major)",
-      "labels": [
-        "dev-dependency"
-      ],
       "automerge": true,
       "extends": [
         "schedule:earlyMondays"
