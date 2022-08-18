@@ -1,5 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "regexManagers": [
+    {
+      "fileMatch": ["^Dockerfile$"],
+      "matchStrings": ["FROM node:(?<currentValue>.*?)-alpine\\n"],
+      "depNameTemplate": "node",
+      "datasourceTemplate": "node",
+      "versioningTemplate": "node"
+    }
+  ],
   "packageRules": [
     {
       "matchPackageNames": [
@@ -8,6 +17,7 @@
         "@types/node",
         "cimg/node"
       ],
+      "matchManagers": ["dockerfile"],
       "matchUpdateTypes": [
         "minor",
         "patch"
