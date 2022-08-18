@@ -22,6 +22,8 @@ jobs:
     <<: *DOCKER_NODE
     resource_class: small
     steps:
+      - attach_workspace:
+          at: ~/
       - run: RENOVATE_CONFIG_FILE=default.json npx -p renovate renovate-config-validator
       - run: RENOVATE_CONFIG_FILE=pkg.json npx -p renovate renovate-config-validator
       - run: RENOVATE_CONFIG_FILE=web.json npx -p renovate renovate-config-validator
