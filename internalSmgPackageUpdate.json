@@ -6,8 +6,7 @@
         "^@smg-automotive\/.*"
       ],
       "rangeStrategy": "pin",
-      "schedule": null,
-      "automerge": false
+      "schedule": null
     }
   ]
 }
