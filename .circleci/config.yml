@@ -1,11 +1,38 @@
 version: 2.1
 
+docker: &DOCKER_NODE
+  docker:
+    - image: cimg/node:18.7.0
+
+slack_context: &SLACK_NOTIFICATION_CONTEXT
+  context:
+    - &SLACK_NOTIFICATION_CONTEXT_ENTRY FE Slack notifications
+
+slack_notify: &SLACK_NOTIFY
+  slack/notify:
+    event: fail
+    template: basic_fail_1
+    branch_pattern: main
+
 orbs:
-  renovate: daniel-shuy/renovate@3.1.0
+  slack: circleci/slack@4.10.1
+
+jobs:
+  validate_renovate_config:
+    <<: *DOCKER_NODE
+    resource_class: small
+    steps:
+      - run: RENOVATE_CONFIG_FILE=default.json npx -p renovate renovate-config-validator
+      - run: RENOVATE_CONFIG_FILE=pkg.json npx -p renovate renovate-config-validator
+      - run: RENOVATE_CONFIG_FILE=web.json npx -p renovate renovate-config-validator
+      - run: RENOVATE_CONFIG_FILE=internalSmgPackageUpdate.json npx -p renovate renovate-config-validator
+      - run: RENOVATE_CONFIG_FILE=groupDevDependencies.json npx -p renovate renovate-config-validator
+      - run: RENOVATE_CONFIG_FILE=autoMergeNonMajorNode.json npx -p renovate renovate-config-validator
+      - run: RENOVATE_CONFIG_FILE=autoMergeNonMajorDocker.json npx -p renovate renovate-config-validator
+      - <<: *SLACK_NOTIFY
 
 workflows:
-  validate_config:
+  test_and_release:
     jobs:
-      - renovate/validate-self-hosted-config:
-          renovate_version: $RENOVATE_VERSION
-          self_hosted_config_file_path: default.json
+      - validate_renovate_config:
+          <<: *SLACK_NOTIFICATION_CONTEXT
