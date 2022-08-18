@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "groupName": "devDependencies (non-major)",
+      "automerge": true,
+      "extends": [
+        "schedule:earlyMondays"
+      ]
+    }
+  ]
+}
