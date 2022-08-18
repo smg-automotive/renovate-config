@@ -7,4 +7,5 @@ workflows:
   validate_config:
     jobs:
       - renovate/validate-self-hosted-config:
+          renovate_version: $RENOVATE_VERSION
           self_hosted_config_file_path: default.json
