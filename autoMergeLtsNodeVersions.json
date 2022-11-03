@@ -10,6 +10,7 @@
       ],
       "matchManagers": ["dockerfile", "npm", "nvm"],
       "versioning": "node",
+      "groupName": "node (lts-only)",
       "schedule": null,
       "automerge": true
     }
