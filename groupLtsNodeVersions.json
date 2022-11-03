@@ -8,11 +8,14 @@
         "@types/node",
         "cimg/node"
       ],
-      "matchManagers": ["dockerfile", "npm", "nvm"],
+      "matchManagers": [
+        "dockerfile",
+        "npm",
+        "nvm",
+        "circleci"
+      ],
       "versioning": "node",
-      "groupName": "node (lts-only)",
-      "schedule": null,
-      "automerge": true
+      "groupName": "node (lts-only)"
     }
   ]
 }
