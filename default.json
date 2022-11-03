@@ -6,7 +6,7 @@
     "group:jestPlusTSJest",
     ":separateMultipleMajorReleases",
     "github>smg-automotive/renovate-config:groupDevDependencies",
-    "github>smg-automotive/renovate-config:autoMergeNonMajorNode",
+    "github>smg-automotive/renovate-config:autoMergeLtsNodeVersions",
     "github>smg-automotive/renovate-config:autoMergeNonMajorDocker",
     "github>smg-automotive/renovate-config:pkg",
     "github>smg-automotive/renovate-config:internalSmgPackageUpdate"
