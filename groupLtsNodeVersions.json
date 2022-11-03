@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "circleci/node",
+        "node",
+        "@types/node",
+        "cimg/node"
+      ],
+      "matchManagers": [
+        "dockerfile",
+        "npm",
+        "nvm",
+        "circleci"
+      ],
+      "versioning": "node",
+      "groupName": "node (lts-only)"
+    }
+  ]
+}

@@ -35,7 +35,7 @@ If the configuration does not fit your project, you can exclude certain presets 
 ````json
 {
   "ignorePresets": [
-    "github>smg-automotive/renovate-config:autoMergeNonMajorNode"
+    "github>smg-automotive/renovate-config:groupLtsNodeVersions"
   ]
 }
 ````
