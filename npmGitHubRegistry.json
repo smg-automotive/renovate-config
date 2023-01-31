@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "hostRules": [
+    {
+      "matchHost": "https://npm.pkg.github.com/",
+      "hostType": "npm",
+      "encrypted": {
+        "token": "wcBMA8xOaBJvzJNbAQf+JkVZJItT35yC//J2ckDZ1zGclRAx3lb1FtNl6shhJKNvtfE04OLTFMhh7LdrrL+naXuCVWgoF7YayaTVVmbKhcr7pIg3KpvyrzMmZscL6WdaZr94LjfTumJFZshZ1DyRFqlraFXD/SuQdoqoSNPZwKqffvhavW3N7BlVZhtHhmkoc/XzDl2hu68V4mgXkDJP+Fs21+8i7RivKF2aqW63czsLu2czt8BGFEd2XXlTEImQGRjFZNSlGksZW9RaMaQQfRgxPHeiMqUkw/1ACnjrWO4rvF8yDwRjFBQIUpUyHethDLYvIGOjNWK23S86sbz3L8QTsZGf5pRRry7IEpN/XtJ4ATxe65/145HdAkicAjuMPj2o5RMCic5DmgqOiDHpSKkxlTeIpsShyfw6KFUZwQ8C/2TUhdgkpcuaalLEL0GZUH+eEu7BTbWkVUbKJW9jf0RgJNDEfiSv/ZbWvaz/MtzJ8QGSeeh8LjW7ZkMWajdMuhpivBQf1sWQ"
+      }
+    }
+  ],
+  "npmrc": "@smg-group:registry=https://npm.pkg.github.com/"
+}

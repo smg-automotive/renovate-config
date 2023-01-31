@@ -39,3 +39,17 @@ If the configuration does not fit your project, you can exclude certain presets 
   ]
 }
 ````
+
+## Supporting updates from a private registry
+
+If you're relying on SMG packages shipped via private npm registry you can add
+
+````json
+{
+  "extends": [
+    "github>smg-automotive/renovate-config:npmGitHubRegistry"
+  ]
+}
+````
+
+to your configuration to allow renovate checking for dependency updates.
