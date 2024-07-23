@@ -9,9 +9,9 @@
   ],
   "packageRules": [
     {
-      "matchPackageName": "next",
-      "addLabel": "needs-qa-review",
-      "requiredStatusCheck": "block-nextjs-update",
+      "matchPackageNames": ["next"],
+      "addLabels": ["needs-qa-review"],
+      "requiredStatusChecks": ["block-nextjs-update"],
       "automerge": false
     }
   ]
