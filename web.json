@@ -6,13 +6,5 @@
   ],
   "ignorePresets": [
     "github>smg-automotive/renovate-config:pkg"
-  ],
-  "packageRules": [
-    {
-      "matchPackageNames": ["next"],
-      "addLabels": ["needs-qa-review"],
-      "requiredStatusChecks": ["block-nextjs-update"],
-      "automerge": false
-    }
   ]
 }
