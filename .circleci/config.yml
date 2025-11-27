@@ -26,10 +26,11 @@ jobs:
       - run: RENOVATE_CONFIG_FILE=default.json npx -p renovate renovate-config-validator
       - run: RENOVATE_CONFIG_FILE=pkg.json npx -p renovate renovate-config-validator
       - run: RENOVATE_CONFIG_FILE=web.json npx -p renovate renovate-config-validator
+      - run: RENOVATE_CONFIG_FILE=delayNpmUpdates.json npx -p renovate renovate-config-validator
       - run: RENOVATE_CONFIG_FILE=internalSmgPackageUpdate.json npx -p renovate renovate-config-validator
       - run: RENOVATE_CONFIG_FILE=groupDevDependencies.json npx -p renovate renovate-config-validator
       - run: RENOVATE_CONFIG_FILE=groupLtsNodeVersions.json npx -p renovate renovate-config-validator
-      - run: RENOVATE_CONFIG_FILE=autoMergeNonMajorDocker.json npx -p renovate renovate-config-validator
+      - run: RENOVATE_CONFIG_FILE=nonMajorDocker.json npx -p renovate renovate-config-validator
       - <<: *SLACK_NOTIFY
 
 workflows:

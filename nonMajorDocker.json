@@ -10,7 +10,10 @@
         "patch"
       ],
       "schedule": null,
-      "automerge": true
+      "automerge": false
     }
+  ],
+  "reviewers": [
+    "team:frontend"
   ]
 }
