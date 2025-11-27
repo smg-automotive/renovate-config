@@ -14,8 +14,10 @@ Enable Renovate in your repository and create a `renovate.json` file in the root
 }
 ````
 
-By default, renovate will pin all **dev** dependencies and uses SemVer ranges for the others. If you work on a project
-that is **not** `required()` by any other package, add `github>smg-automotive/renovate-config:web` to renovate.json.
+Our configuration pins all dependencies (dev and regular) to a specific version.
+
+For a web project add `github>smg-automotive/renovate-config:web` to renovate.json.
+For a package add `github>smg-automotive/renovate-config:pkg` to renovate.json.
 
 ````json
 {
