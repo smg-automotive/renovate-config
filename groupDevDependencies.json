@@ -10,7 +10,7 @@
         "patch"
       ],
       "groupName": "devDependencies (non-major)",
-      "automerge": true,
+      "automerge": false,
       "schedule": [
         "before 3am on Tuesday"
       ]
