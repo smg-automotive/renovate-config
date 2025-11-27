@@ -12,8 +12,8 @@
       "groupName": "devDependencies (non-major)",
       "automerge": false,
       "schedule": [
-       "before 3am on Tuesday"
-     ]
+        "before 3am on Tuesday"
+      ]
     }
   ]
 }
