@@ -12,8 +12,5 @@
       "schedule": null,
       "automerge": false
     }
-  ],
-  "reviewers": [
-    "team:frontend"
   ]
 }

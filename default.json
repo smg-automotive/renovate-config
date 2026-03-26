@@ -11,8 +11,5 @@
     "github>smg-automotive/renovate-config:nonMajorDocker",
     "github>smg-automotive/renovate-config:pkg",
     "github>smg-automotive/renovate-config:internalSmgPackageUpdate"
-  ],
-  "reviewers": [
-    "team:frontend"
   ]
 }
