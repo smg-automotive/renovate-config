@@ -7,6 +7,15 @@
       ],
       "rangeStrategy": "pin",
       "schedule": null
+    },
+    {
+      "matchPackagePatterns": [
+        "^@smg-automotive\/.*"
+      ],
+      "matchDepTypes": [
+        "peerDependencies"
+      ],
+      "rangeStrategy": "auto"
     }
   ]
 }
