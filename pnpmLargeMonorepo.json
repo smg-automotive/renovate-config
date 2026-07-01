@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Reduce pnpm 11 lockfile verification memory use on Mend Renovate runners. Requires PNPM_CONFIG_TRUST_LOCKFILE in Mend org allowedEnv before use.",
+  "toolSettings": {
+    "nodeMaxMemory": 1536
+  },
+  "env": {
+    "PNPM_MAX_WORKERS": "1",
+    "PNPM_WORKERS": "1",
+    "PNPM_CONFIG_TRUST_LOCKFILE": "true"
+  }
+}
