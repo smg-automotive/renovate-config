@@ -4,6 +4,8 @@
     "config:base",
     "group:definitelyTyped",
     "group:jestPlusTSJest",
+    "group:reactMonorepo",
+    "group:react",
     ":separateMultipleMajorReleases",
     "github>smg-automotive/renovate-config:delayNpmUpdates",
     "github>smg-automotive/renovate-config:groupDevDependencies",
